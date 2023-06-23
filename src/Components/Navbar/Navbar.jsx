@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
@@ -17,7 +18,6 @@ function Navbar() {
   }, []);
 
   function activeLink(event) {
-    event.preventDefault();
     listRefs.current.forEach((item) => {
       item.classList.remove("active");
     });
@@ -29,44 +29,44 @@ function Navbar() {
       <div className="navigation">
         <ul>
           <li className="list active" ref={(el) => (listRefs.current[0] = el)}>
-            <a href=".">
+            <Link to="/">
               <span className="icon">
                 <ion-icon name="home-outline"></ion-icon>
               </span>
               <span className="text">Accueil</span>
-            </a>
+            </Link>
           </li>
           <li className="list" ref={(el) => (listRefs.current[1] = el)}>
-            <a href=".">
+            <Link to="/projets">
               <span className="icon">
-                <ion-icon name="home-outline"></ion-icon>
+                <ion-icon name="code-working-outline"></ion-icon>
               </span>
               <span className="text">Projets</span>
-            </a>
+            </Link>
           </li>
           <li className="list" ref={(el) => (listRefs.current[2] = el)}>
-            <a href=".">
+            <Link to="/contact">
               <span className="icon">
-                <ion-icon name="home-outline"></ion-icon>
+                <ion-icon name="mail-outline"></ion-icon>
               </span>
-              <span className="text">Home</span>
-            </a>
+              <span className="text">Contact</span>
+            </Link>
           </li>
           <li className="list" ref={(el) => (listRefs.current[3] = el)}>
-            <a href=".">
+            <Link to="/competences">
               <span className="icon">
-                <ion-icon name="home-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
               </span>
-              <span className="text">Home</span>
-            </a>
+              <span className="text">Compétences</span>
+            </Link>
           </li>
           <li className="list" ref={(el) => (listRefs.current[4] = el)}>
-            <a href="/">
+            <Link to="/github">
               <span className="icon">
                 <ion-icon name="git-merge-outline"></ion-icon>
               </span>
               <span className="text">Github</span>
-            </a>
+            </Link>
           </li>
           <div className="indicator"></div>
         </ul>
