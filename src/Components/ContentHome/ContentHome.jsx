@@ -1,12 +1,17 @@
 import React from "react";
+import {useTypewriter, Cursor} from "react-simple-typewriter"
 import "./ContentHome.css"
 import CV from "../../Assets/Files/CV1506.pdf"
 
 function ContentHome(){
+    const [text] = useTypewriter({
+        words : ['HTML/CSS !','Javascript !', 'React !', 'PHP !'],
+        loop: {},
+    })
     return(
         <div className="content-home">
             <p className="home-goal">Seul objectif, être le meilleur !</p>
-            <h1 className="home-title">Développeur Javascript</h1>
+            <h1 className="home-title">Développeur <span className="title-home-color">{text}</span><Cursor/></h1>
             <p className="home-citation">Le web est comme un livre ouvert dont chaque page est une expérience à vivre. <br /> "Laurent Denis"</p>
             <button className="download-button">
                 <a className="cv-home" href={CV} download>
