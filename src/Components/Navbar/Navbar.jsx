@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import Song from "../../Assets/Songs/suzume.mp3"
 import "./Navbar.css";
 
 function Navbar() {
@@ -78,10 +79,23 @@ function OpenSite(){
       </div>
 
       <div className="container-btn-start">
+        <div className="container-star">
+          <div className="starsec"></div>
+          <div className="starthird"></div>
+          <div className="starfourth"></div>
+          <div className="starfifth"></div>
+        </div>
+
+        <div class="text-container">
+          <h1>Bienvenue</h1>
+        </div>
+
         <button onClick={OpenSite} className="btn">
           Visite site
         </button>
       </div>
+
+      <audio src={Song} autoPlay loop />
 
     </div>
   );
