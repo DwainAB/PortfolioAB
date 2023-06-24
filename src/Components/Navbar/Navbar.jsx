@@ -24,6 +24,11 @@ function Navbar() {
     event.currentTarget.classList.add("active");
   }
 
+function OpenSite(){
+  let containerBtn = document.querySelector('.container-btn-start')
+  containerBtn.classList.add('open-site')
+}
+
   return (
     <div>
       <div className="navigation">
@@ -71,8 +76,15 @@ function Navbar() {
           <div className="indicator"></div>
         </ul>
       </div>
+
+      <div className="container-btn-start">
+        <button onClick={OpenSite} className="btn">
+          Visite site
+        </button>
+      </div>
+
     </div>
   );
 }
 
-export default Navbar;
+export default Navbar
