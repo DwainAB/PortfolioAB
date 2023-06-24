@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Song from "../../Assets/Songs/suzume.mp3"
 import "./Navbar.css";
+import ParticlesComponent from "../Particles/Particles";
+
 
 function Navbar() {
   const listRefs = useRef([]);
@@ -25,13 +27,14 @@ function Navbar() {
     event.currentTarget.classList.add("active");
   }
 
-function OpenSite(){
-  let containerBtn = document.querySelector('.container-btn-start')
-  containerBtn.classList.add('open-site')
-}
+  function OpenSite(){
+    let containerBtn = document.querySelector('.container-btn-start')
+    containerBtn.classList.add('open-site')
+  }
 
   return (
     <div>
+      <ParticlesComponent/>
       <div className="navigation">
         <ul>
           <li className="list active" ref={(el) => (listRefs.current[0] = el)}>
@@ -79,21 +82,22 @@ function OpenSite(){
       </div>
 
       <div className="container-btn-start">
-        <div className="container-star">
-          <div className="starsec"></div>
-          <div className="starthird"></div>
-          <div className="starfourth"></div>
-          <div className="starfifth"></div>
-        </div>
 
-        <div class="text-container">
-          <h1>Bienvenue</h1>
-        </div>
-
-        <button onClick={OpenSite} className="btn">
-          Visite site
-        </button>
+      <div className="container-start">
+        <div className="starsec"></div>
+        <div className="starthird"></div>
+        <div className="starfourth"></div>
+        <div className="starfifth"></div>
       </div>
+      
+      <div class="text-container">
+        <h1>Bienvenue</h1>
+      </div>
+
+      <button onClick={OpenSite} className="btn">
+        Visite site
+      </button>
+    </div>
 
       <audio src={Song} autoPlay loop />
 
