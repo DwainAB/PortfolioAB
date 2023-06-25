@@ -1,0 +1,140 @@
+.container-contact{
+    display: flex;
+    position: relative;
+    z-index: 555;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 150px;
+    justify-content: space-between;
+}
+
+.container-contact-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+    
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 0.4em;
+    background-color: #0F172A;
+    border-radius: 20px;
+  }
+  
+  #heading {
+    text-align: center;
+    margin: 2em;
+    color: var(--third-color);
+    font-size: 1.2em;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+  }
+  
+  .field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 25px;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  }
+  
+  
+  .button3 {
+    margin-bottom: 3em;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-image: linear-gradient(163deg, black 0%, #000f88 100%);
+    color: grey;
+  }
+  
+  .button3:hover {
+    background-image: linear-gradient(163deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: rgb(255, 255, 255);
+  }
+  
+  .card {
+    background-image: linear-gradient(163deg, var(--primary-color) 0%, #3700ff 100%);
+    border-radius: 22px;
+    transition: all .3s;
+  }
+  
+  .card2 {
+    border-radius: 0;
+    transition: all .2s;
+  }
+  
+  .card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+  }
+  
+  .card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+  }
+
+
+
+  .input-container {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 5px;
+    border-radius: 20px;
+  }
+  
+  .input-container .bash-text {
+    font-size: .8rem;
+    color: white;
+  }
+  
+  .input-container .bash-text .user {
+    color: #E879F9;
+  }
+  
+  .input-container .bash-text .vm {
+    color: #2DD4BF;
+  }
+  
+  .input-container .bash-text .char {
+    color: #A78BFA;
+  }
+  
+  .input-container input[type=text].input, .input-container input[type=email].input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+  }
+
+  .container-contact-right{
+    width: 600px;
+  }
+
+  .title-contact{
+    color: var(--third-color);
+    font-size: 2rem;
+    font-family: var(--secondary-font);
+  }
+
+  .text-contact{
+    color: white;
+    font-family: var(--primary-font);
+    font-size: 1.3rem;
+    width: 600px;
+  }

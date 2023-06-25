@@ -1,9 +1,10 @@
 import React from "react";
+import ContentContact from "../Components/ContentContact/ContentContact";
 
 function Test(){
     return(
         <div>
-            <h1>test</h1>
+            <ContentContact/>
         </div>
     )
 }
