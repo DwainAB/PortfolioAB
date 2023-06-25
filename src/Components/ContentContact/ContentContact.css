@@ -138,3 +138,47 @@
     font-size: 1.3rem;
     width: 600px;
   }
+
+  @media screen and (max-width: 1200px) {
+    .container-contact{
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0;
+      margin-bottom: 150px;
+    }
+
+    .container-contact-right{
+      width: 500px;
+    }
+    
+    .text-contact{
+      width: 500px;
+      font-size: 1rem;
+    }
+
+    .title-contact{
+      font-size: 1.7rem;
+    }
+    }
+
+    @media screen and (max-width: 625px) {
+      .container-contact-right{
+        width: 400px;
+      }
+
+      .text-contact{
+        width: 400px;
+      }
+  }
+
+    @media screen and (max-width: 455px) {
+      .container-contact-right{
+      width: 300px;
+    }
+    
+    .text-contact{
+      width: 300px;
+      font-size: 1rem;
+    }
+}

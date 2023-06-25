@@ -11,6 +11,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    z-index: 999;
 }
 
 .navigation ul{
@@ -62,7 +63,7 @@
     transition: 0.5s;
     opacity: 0;
     transform: translateY(20px);
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
 }
 
 .navigation ul li.active a .text{
@@ -111,7 +112,7 @@
 
 .text-container h1{
   margin: 0;
-  font-size: 150px;
+  font-size: 8vw;
   color: rgba(225,225,225, .01);
   background-image: url("https://blog.orsys.fr/les-carnets/wp-content/uploads/2021/06/Technologies_web-scaled-e1622616972782-1024x576.jpg");
   background-repeat: repeat;
@@ -379,3 +380,32 @@
         transform: translateY(-2000px);
       }
     }
+
+    @media screen and (max-width: 800px) {
+      .text-container h1{
+        font-size: 11vw;
+      }
+
+      .btn{
+        width: 150px;
+        font-size: 0.6rem;
+      }
+
+      .navigation{
+        bottom: 0px;
+        margin: 0;
+      }
+      }
+
+    @media screen and (max-width: 625px) {
+
+      .navigation{
+        width: 450px;
+      }
+}
+    @media screen and (max-width: 500px) {
+
+      .navigation{
+        width: 350px;
+      }
+}

@@ -120,3 +120,91 @@
     width: 800px;
     height: 600px;
    }
+
+   /* Default styles for content-home */
+.content-home {
+  margin: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-right {
+  margin-top: -100px;
+}
+
+.img-home {
+  width: 800px;
+  height: 600px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .content-home {
+        flex-direction: column-reverse;
+        margin-top: 0;
+    }
+
+  .home-goal {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-citation {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .download-button {
+    width: 150px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .img-home {
+    width: 600px;
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .img-home {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .img-home {
+    width: 300px;
+    height: 225px;
+    margin: 0;
+    padding: 0;
+  }
+  .home-right{
+    height: 100%;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .img-home {
+    width: 200px;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .content-home{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
