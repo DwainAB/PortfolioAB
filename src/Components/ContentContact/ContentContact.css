@@ -181,4 +181,9 @@
       width: 300px;
       font-size: 1rem;
     }
+
+    .form{
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
 }

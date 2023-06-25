@@ -92,3 +92,70 @@ font-weight: 500;
 .button:hover .icon .icon-shere {
   display: flex;
 }
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .container-menu-top h1 {
+    font-size: 22px;
+  }
+
+  .button {
+    font-size: 16px;
+  }
+  .container-menu-top{
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .container-menu-top h1 {
+    font-size: 24px;
+  }
+
+  .button {
+    font-size: 18px;
+  }
+  .container-menu-top{
+    margin: 0;
+  }
+}
+.container-menu-top{
+  margin: 0;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .container-menu-top h1 {
+    font-size: 26px;
+  }
+
+  .button {
+    font-size: 20px;
+  }
+  .container-menu-top{
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-menu-top h1 {
+    font-size: 28px;
+  }
+
+  .button {
+    font-size: 22px;
+  }
+  .container-menu-top{
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container-menu-top h1 {
+    font-size: 16px;
+  }
+  .button {
+    font-size: 16px;
+  }
+  .img-container-menu-top{
+    font-size: 16px;
+  }
+}
