@@ -70,11 +70,11 @@ function Navbar() {
             </Link>
           </li>
           <li className="list" ref={(el) => (listRefs.current[4] = el)}>
-            <Link to="/github">
+            <Link to="/a-propos">
               <span className="icon">
-                <ion-icon name="git-merge-outline"></ion-icon>
+                <ion-icon name="finger-print-outline"></ion-icon>
               </span>
-              <span className="text">Github</span>
+              <span className="text">Moi ?</span>
             </Link>
           </li>
           <div className="indicator"></div>

@@ -1,0 +1,83 @@
+.container-about{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 80px;
+}
+
+.title-about{
+    font-size: 2rem;
+    color: var(--third-color);
+    font-family: var(--secondary-font);
+    font-weight: 500;
+}
+
+.imgabout{
+    width: 500px;
+    height: 500px; position: relative;
+    animation-name: floatAnimation;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes floatAnimation {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+.card-about {
+    width: 500px;
+    height: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    z-index: 1;
+    background-color: #011522;
+    position: relative;
+    z-index: 555;
+    overflow-y: scroll;
+   }
+
+   .card__content-about{
+    padding-left: 20px;
+    padding-right: 20px;
+   }
+
+   .text-me-about{
+    color: white;
+    font-family: var(--primary-font);
+   }
+   
+   .tools-about {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+   }
+   
+   .circle-about {
+    padding: 0 4px;
+   }
+   
+   .box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+   }
+   
+   .red {
+    background-color: #ff605c;
+   }
+   
+   .yellow {
+    background-color: #ffbd44;
+   }
+   
+   .green {
+    background-color: #00ca4e;
+   }
+   

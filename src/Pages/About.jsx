@@ -1,9 +1,10 @@
 import React from "react";
+import ContentAbout from "../Components/ContentAbout/ContentAbout"
 
 function Github(){
     return(
         <div>
-            <h1>Github</h1>
+            <ContentAbout/>
         </div>
     )
 }

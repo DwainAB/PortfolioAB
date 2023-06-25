@@ -6,7 +6,7 @@ import Navbar from "./Components/Navbar/Navbar.jsx";
 import Contact from "./Pages/Contact";
 import Project from "./Pages/Projects"
 import Skills from "./Pages/Skills"
-import Github from "./Pages/Github";
+import About from "./Pages/About";
 import MenuTop from "./Components/MenuTop/MenuTop";
 
 
@@ -23,7 +23,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/projets" element={<Project />} />
             <Route path="/competences" element={<Skills />} />
-            <Route path="/github" element={<Github />} />
+            <Route path="/a-propos" element={<About />} />
           </Routes>
         </div>
       </div>
