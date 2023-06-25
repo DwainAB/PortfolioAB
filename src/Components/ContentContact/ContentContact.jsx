@@ -5,35 +5,35 @@ function ContentContact(){
     return(
         <div className="container-contact">
             <div className="container-contact-left">
-                <div class="card">
-                    <div class="card2">
-                        <form class="form">
+                <div className="card">
+                    <div className="card2">
+                        <form className="form">
                             <p id="heading">Contact</p>
-                            <div class="input-container field">
-                                <p class="bash-text">
-                                    <span class="user">user</span><span class="vm">@name</span>:<span class="char">~</span>$
+                            <div className="input-container field">
+                                <p className="bash-text">
+                                    <span className="user">user</span><span className="vm">@name</span>:<span className="char">~</span>$
                                 </p>
-                                <input class="input" placeholder="git config --global user.name" type="text"/>
+                                <input className="input" placeholder="git config --global user.name" type="text"/>
                             </div>
-                            <div class="input-container field">
-                                <p class="bash-text">
-                                    <span class="user">user</span><span class="vm">@mail</span>:<span class="char">~</span>$
+                            <div className="input-container field">
+                                <p className="bash-text">
+                                    <span className="user">user</span><span className="vm">@mail</span>:<span className="char">~</span>$
                                 </p>
-                                <input class="input" placeholder="git config --global user.email" type="email"/>
+                                <input className="input" placeholder="git config --global user.email" type="email"/>
                             </div>
-                            <div class="input-container field">
-                                <p class="bash-text">
-                                    <span class="user">user</span><span class="vm">@objet</span>:<span class="char">~</span>$
+                            <div className="input-container field">
+                                <p className="bash-text">
+                                    <span className="user">user</span><span className="vm">@objet</span>:<span className="char">~</span>$
                                 </p>
-                                <input class="input" placeholder="git add 'Objet'" type="text"/>
+                                <input className="input" placeholder="git add 'Objet'" type="text"/>
                             </div>
-                            <div class="input-container field">
-                                <p class="bash-text input-message test">
-                                    <span class="user">user</span><span class="vm">@message</span>:<span class="char">~</span>$
+                            <div className="input-container field">
+                                <p className="bash-text input-message test">
+                                    <span className="user">user</span><span className="vm">@message</span>:<span className="char">~</span>$
                                 </p>
-                                <input class="input input-message" placeholder="git commit -m 'message'" type="text"/>
+                                <input className="input input-message" placeholder="git commit -m 'message'" type="text"/>
                             </div>
-                            <button class="button3">Git push</button>
+                            <button className="button3">Git push</button>
                         </form>
                     </div>
                 </div>
