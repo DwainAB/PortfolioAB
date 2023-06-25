@@ -148,5 +148,25 @@
   }
   
   
+  @media screen and (max-width: 1070px) {
+    .container-projects{
+      justify-content: space-between;
+    }
+}
   
+  @media screen and (max-width: 850px) {
+    .container-projects{
+      width: 600px;
+      margin: 0 auto;
+      margin-top: 100px;
+      padding-left: 0;
+    }
+}
+  
+  @media screen and (max-width: 660px) {
+    .container-projects{
+      width: 300px;
+      margin-top: 150px;
+    }
+}
   
