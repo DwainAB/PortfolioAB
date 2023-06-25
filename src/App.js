@@ -7,11 +7,15 @@ import Contact from "./Pages/Contact";
 import Project from "./Pages/Projects"
 import Skills from "./Pages/Skills"
 import Github from "./Pages/Github";
+import MenuTop from "./Components/MenuTop/MenuTop";
+
 
 function App() {
+   
   return (
     <BrowserRouter>
       <div className="app">
+      <MenuTop/>
         <Navbar />
         <div className="global">
           <Routes>

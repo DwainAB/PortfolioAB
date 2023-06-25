@@ -1,8 +1,12 @@
 import React from "react";
+import ContentSkills from "../Components/ContentSkills/ContentSkills.jsx";
 
 function Skills(){
+
     return(
-        <div><h1>Compétences</h1></div>
+        <div>
+            <ContentSkills/>
+        </div>
     )
 }
 

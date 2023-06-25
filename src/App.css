@@ -3,6 +3,7 @@ body{
   padding: 0;
   background: rgb(5,64,179);
   background: radial-gradient(circle, rgba(5,64,179,1) 34%, rgba(3,12,84,1) 100%);
+  overflow: hidden;
 }
 
 :root{
