@@ -1,10 +1,10 @@
 import React from "react";
-
+import ContentProjects from "../Components/ContentProjects/ContentProjects";
 
 function Projects(){
     return(
         <div>
-            <h1>test</h1>
+            <ContentProjects/>
         </div>
     )
 }
