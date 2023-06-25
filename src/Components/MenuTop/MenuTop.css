@@ -1,12 +1,16 @@
 .container-menu-top{
   border-bottom: 2px solid var(--primary-color);
-  max-width: 70%;
-  width: auto;
-  margin: 0 auto;
+  margin-left: 100px;
+  margin-right: 100px;
   height: 100px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.container-menu-top h1{
+font-family: var(--primary-font);
+font-weight: 500;
 }
 
 .img-container-menu-top{
@@ -16,4 +20,75 @@
 
 .container-menu-top h1{
     color: white;
+}
+
+
+.button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  background: var(--primary-color);
+  color: white;
+  padding: 0.35em 0;
+  font-size: 17px;
+  border: none;
+  border-radius: 0.7em;
+  letter-spacing: 0.08em;
+  position: relative;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 2.7em;
+  padding-left: 3em;
+  padding-right: 0.5em;
+}
+
+.button:hover{
+  cursor: pointer;
+}
+
+.button .icon {
+  background: #fff;
+  margin-right: 1em;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.5em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0.2em;
+  transition: all .7s;
+
+
+}
+
+.shere{
+  width: 20px;
+  height: 1.3rem;
+}
+
+.button:hover .icon {
+  width: calc(100% - 0.6rem);
+}
+
+.button:hover .shere {
+  width: calc(100% - 0.6rem);
+  display: none;
+}
+
+.button .icon-shere {
+  color: var(--primary-color);
+  width: 1.5rem;
+  height: 1.5rem;
+  display: none;
+  margin-left: 10px;
+}
+
+.logo-social{
+  color: var(--primary-color);
+}
+
+.button:hover .icon .icon-shere {
+  display: flex;
 }
